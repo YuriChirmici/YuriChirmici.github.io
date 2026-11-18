@@ -4,39 +4,106 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>YukiForge Games</title>
+<meta name="description" content="Small indie games for Android, and something new every few weeks.">
+<meta property="og:title" content="YukiForge Games">
+<meta property="og:description" content="Small indie games for Android, and something new every few weeks.">
+<meta property="og:image" content="https://yurichirmici.github.io/games/logo-512.png">
+<meta property="og:url" content="https://yurichirmici.github.io/games/">
+<link rel="icon" href="logo-256.png">
 <style>
-  :root { --bg: #17171c; --card: #1e1e25; --text: #e6e6ea; --dim: #a6a6b2; --line: #2e2e38; --accent: #ffc43c; }
+  :root { --bg: #0b0e22; --card: #151a36; --text: #eef1fb; --dim: #9aa3c4; --line: #262d52;
+          --accent: #ffa63a; --ice: #c4e4ff; --pill: #232a50; }
   @media (prefers-color-scheme: light) {
-    :root { --bg: #f4f4f6; --card: #ffffff; --text: #1a1a1f; --dim: #5a5a66; --line: #e2e2e8; --accent: #b8791a; }
+    :root { --bg: #eef1f8; --card: #ffffff; --text: #151a36; --dim: #5a6285; --line: #dde2ef;
+            --accent: #c86a00; --ice: #2c5d8f; --pill: #eef1f8; }
   }
   * { box-sizing: border-box; }
-  body { margin: 0; padding: 32px 16px 64px; background: var(--bg); color: var(--text);
-         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
-  main { max-width: 680px; margin: 0 auto; background: var(--card); border: 1px solid var(--line);
-         border-radius: 14px; padding: 32px 28px; }
-  h1 { font-size: 28px; margin: 0 0 20px; }
-  h2 { font-size: 18px; margin: 24px 0 6px; padding-top: 18px; border-top: 1px solid var(--line); }
-  h2:first-of-type { border-top: 0; padding-top: 0; }
-  p { margin: 0 0 8px; }
-  a { color: var(--accent); }
-  footer { color: var(--dim); font-size: 14px; margin-top: 32px; }
-  @media (max-width: 480px) { body { padding: 16px 12px 48px; } main { padding: 24px 18px; border-radius: 10px; } }
+  body { margin: 0; padding: 32px 16px 56px; background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 18px; margin-bottom: 8px; }
+  header img { width: 84px; height: 84px; border-radius: 50%; flex: none; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0; }
+  .tagline { color: var(--ice); margin: 4px 0 0; }
+  .social { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 28px; }
+  .social a { background: var(--pill); border: 1px solid var(--line); color: var(--text); text-decoration: none;
+              padding: 6px 14px; border-radius: 999px; font-size: 15px; }
+  .game { display: flex; gap: 16px; background: var(--card); border: 1px solid var(--line);
+          border-radius: 16px; padding: 18px; margin-bottom: 14px; }
+  .game > img { width: 88px; height: 88px; border-radius: 20px; flex: none; }
+  .game div { min-width: 0; }
+  .game h2 { font-size: 20px; margin: 0 0 4px; }
+  .game h2 a { color: var(--text); text-decoration: none; }
+  .game p { margin: 0 0 10px; color: var(--dim); }
+  .links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; font-size: 15px; }
+  .links a { color: var(--accent); }
+  .play { background: var(--accent); color: #11142a !important; text-decoration: none; font-weight: 600;
+          padding: 6px 14px; border-radius: 999px; }
+  .soon { border: 1px solid var(--line); color: var(--dim); padding: 5px 13px; border-radius: 999px; }
+  footer { color: var(--dim); font-size: 14px; margin-top: 28px; }
+  footer a { color: var(--accent); }
+  @media (max-width: 480px) {
+    body { padding: 20px 16px 40px; }
+    header img { width: 64px; height: 64px; }
+    h1 { font-size: 24px; }
+    .game { padding: 14px; gap: 12px; }
+    .game > img { width: 64px; height: 64px; border-radius: 15px; }
+  }
 </style>
 </head>
 <body>
 <main>
-  <h1>YukiForge Games</h1>
+  <header>
+    <img src="logo-256.png" alt="YukiForge Games logo">
+    <div>
+      <h1>YukiForge Games</h1>
+      <p class="tagline">Small indie games for Android, and something new every few weeks.</p>
+    </div>
+  </header>
 
-  <h2><a href="../swyde/">Swyde</a></h2>
-  <p>A swipe puzzle: one swipe slides every block, each block leaves through the exit of its colour.</p>
-  <p><a href="../swyde/privacy.html">Privacy policy</a></p>
+  <nav class="social">
+    <a href="https://www.youtube.com/@yuki_forge">YouTube</a>
+    <a href="https://www.instagram.com/yukiforge.games/">Instagram</a>
+    <a href="https://www.tiktok.com/@yuki_forge">TikTok</a>
+  </nav>
 
-  <h2><a href="../daisydoku/">Daisydoku</a></h2>
-  <p>A calm logic puzzle: one flower in every row, column and garden bed, and every solved level grows your garden.</p>
-  <p><a href="../daisydoku/privacy.html">Privacy policy</a></p>
+  <section class="game">
+    <img src="../idle-rift-driver/icon.png" alt="Idle Rift Driver icon">
+    <div>
+      <h2>Idle Rift Driver</h2>
+      <p>Idle shooter on a bike: shoot monsters, upgrade, prestige and earn offline.</p>
+      <div class="links">
+        <a class="play" href="https://play.google.com/store/apps/details?id=com.yuki.idleriftdriver&amp;referrer=utm_source%3Dstudio_site">Get it on Google Play</a>
+        <a href="../idle-rift-driver/privacy.html">Privacy policy</a>
+      </div>
+    </div>
+  </section>
 
-  <h2>Idle Rift Driver</h2>
-  <p><a href="../idle-rift-driver/privacy.html">Privacy policy</a></p>
+  <section class="game">
+    <img src="../swyde/icon.png" alt="Swyde icon">
+    <div>
+      <h2><a href="../swyde/">Swyde</a></h2>
+      <p>A swipe puzzle: one swipe slides every block, each block leaves through the exit of its colour.</p>
+      <div class="links">
+        <span class="soon">Coming soon to Google Play</span>
+        <a href="../swyde/">More</a>
+        <a href="../swyde/privacy.html">Privacy policy</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="game">
+    <img src="../daisydoku/icon.png" alt="Daisydoku icon">
+    <div>
+      <h2><a href="../daisydoku/">Daisydoku</a></h2>
+      <p>A calm logic puzzle: one flower in every row, column and garden bed, and every solved level grows your garden.</p>
+      <div class="links">
+        <span class="soon">Coming soon to Google Play</span>
+        <a href="../daisydoku/">More</a>
+        <a href="../daisydoku/privacy.html">Privacy policy</a>
+      </div>
+    </div>
+  </section>
 
   <footer>Contact: <a href="mailto:yukiforge.games@gmail.com">yukiforge.games@gmail.com</a></footer>
 </main>
