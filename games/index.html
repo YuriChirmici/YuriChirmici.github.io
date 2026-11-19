@@ -32,10 +32,15 @@
   .social svg { width: 22px; height: 22px; flex: none; }
   .game { display: flex; gap: 16px; background: var(--card); border: 1px solid var(--line);
           border-radius: 16px; padding: 18px; margin-bottom: 14px; }
-  .game > img { width: 88px; height: 88px; border-radius: 20px; flex: none; }
+  .game > img, .game .icon img { width: 88px; height: 88px; border-radius: 20px; display: block; }
+  .game > img, .game .icon { flex: none; }
+  .game .icon img { transition: transform .15s; }
+  .game .icon:hover img { transform: scale(1.04); }
   .game div { min-width: 0; }
   .game h2 { font-size: 20px; margin: 0 0 4px; }
-  .game h2 a { color: var(--text); text-decoration: none; }
+  .game h2 a { color: var(--text); text-decoration: underline 2px var(--accent); text-underline-offset: 5px; }
+  .game h2 a::after { content: " \203A"; color: var(--accent); }
+  .game h2 a:hover { color: var(--accent); }
   .game p { margin: 0 0 10px; color: var(--dim); }
   .links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; font-size: 15px; }
   .links a { color: var(--accent); }
@@ -50,7 +55,7 @@
     header img { width: 64px; height: 64px; }
     h1 { font-size: 24px; }
     .game { padding: 14px; gap: 12px; }
-    .game > img { width: 64px; height: 64px; border-radius: 15px; }
+    .game > img, .game .icon img { width: 64px; height: 64px; border-radius: 15px; }
   }
 </style>
 </head>
@@ -71,9 +76,9 @@
   </nav>
 
   <section class="game">
-    <img src="../idle-rift-driver/icon.png" alt="Idle Rift Driver icon">
+    <a class="icon" href="https://play.google.com/store/apps/details?id=com.yuki.idleriftdriver&amp;referrer=utm_source%3Dstudio_site"><img src="../idle-rift-driver/icon.png" alt="Idle Rift Driver icon"></a>
     <div>
-      <h2>Idle Rift Driver</h2>
+      <h2><a href="https://play.google.com/store/apps/details?id=com.yuki.idleriftdriver&amp;referrer=utm_source%3Dstudio_site">Idle Rift Driver</a></h2>
       <p>Idle shooter on a bike: shoot monsters, upgrade, prestige and earn offline.</p>
       <div class="links">
         <a class="play" href="https://play.google.com/store/apps/details?id=com.yuki.idleriftdriver&amp;referrer=utm_source%3Dstudio_site"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M6 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 6 3.5z"/></svg>Get it on Google Play</a>
@@ -83,39 +88,36 @@
   </section>
 
   <section class="game">
-    <img src="../swyde/icon.png" alt="Swyde icon">
+    <a class="icon" href="../swyde/"><img src="../swyde/icon.png" alt="Swyde icon"></a>
     <div>
       <h2><a href="../swyde/">Swyde</a></h2>
       <p>A swipe puzzle: one swipe slides every block, each block leaves through the exit of its colour.</p>
       <div class="links">
         <span class="soon">Coming soon to Google Play</span>
-        <a href="../swyde/">More</a>
         <a href="../swyde/privacy.html">Privacy policy</a>
       </div>
     </div>
   </section>
 
   <section class="game">
-    <img src="../daisydoku/icon.png" alt="Daisydoku icon">
+    <a class="icon" href="../daisydoku/"><img src="../daisydoku/icon.png" alt="Daisydoku icon"></a>
     <div>
       <h2><a href="../daisydoku/">Daisydoku</a></h2>
       <p>A calm logic puzzle: one flower in every row, column and garden bed, and every solved level grows your garden.</p>
       <div class="links">
         <span class="soon">Coming soon to Google Play</span>
-        <a href="../daisydoku/">More</a>
         <a href="../daisydoku/privacy.html">Privacy policy</a>
       </div>
     </div>
   </section>
 
   <section class="game">
-    <img src="../raylume/icon.png" alt="Raylume icon">
+    <a class="icon" href="../raylume/"><img src="../raylume/icon.png" alt="Raylume icon"></a>
     <div>
       <h2><a href="../raylume/">Raylume</a></h2>
       <p>A calm laser puzzle: turn mirrors, mix colored beams, and every solved level lights a new star in your night sky.</p>
       <div class="links">
         <span class="soon">Coming soon to Google Play</span>
-        <a href="../raylume/">More</a>
         <a href="../raylume/privacy.html">Privacy policy</a>
       </div>
     </div>
