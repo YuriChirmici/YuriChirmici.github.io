@@ -27,6 +27,8 @@
   li::before { content: ""; position: absolute; left: 4px; top: 16px; width: 12px; height: 12px; border-radius: 3px; background: var(--green); }
   li:nth-child(2)::before { background: #3b82f6; } li:nth-child(3)::before { background: #f0b73a; } li:nth-child(4)::before { background: #ef5a5a; }
   .links a { color: var(--ink); font-weight: 700; margin: 0 10px; }
+  .all { display: inline-block; border: 2px solid var(--accent); color: var(--accent); font-weight: 800;
+          padding: 10px 22px; border-radius: 999px; text-decoration: none; margin: 20px 0 0; }
   footer { color: var(--dim); font-size: 14px; margin-top: 36px; }
   footer a { color: var(--dim); }
   @media (max-width: 480px) { h1 { font-size: 32px; } .shots { gap: 8px; } }
@@ -58,8 +60,10 @@
     <a href="https://www.tiktok.com/@yuki_forge">TikTok</a>
   </p>
 
+  <a class="all" href="../games/">All our games</a>
+
   <footer>
-    By YukiForge Games &middot; <a href="privacy.html">Privacy policy</a> &middot;
+    By <a href="../games/">YukiForge Games</a> &middot; <a href="privacy.html">Privacy policy</a> &middot;
     <a href="mailto:yukiforge.games@gmail.com">yukiforge.games@gmail.com</a>
   </footer>
 </main>
